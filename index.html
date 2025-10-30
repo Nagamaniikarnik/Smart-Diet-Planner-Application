@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Diet Planner | AI-Powered Nutrition & Wellness</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(22, 27, 34, 0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #58a6ff;
+      font-weight: 600;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #c9d1d9;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: 
+        linear-gradient(rgba(13,17,23,0.8), rgba(13,17,23,0.9)),
+        url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 18px;
+      color: #b1bac4;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #238636;
+      color: #fff;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #2ea043;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    section h3 {
+      font-size: 32px;
+      color: #58a6ff;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      color: #b1bac4;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 17px;
+    }
+
+    .features {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .feature {
+      background: #161b22;
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(88,166,255,0.2);
+    }
+
+    .feature h4 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #b1bac4;
+      font-size: 15px;
+    }
+
+    .contact {
+      background: #161b22;
+      border-radius: 12px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0d1117;
+      color: #8b949e;
+      font-size: 14px;
+      border-top: 1px solid #30363d;
+    }
+
+    /* Scroll Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      .hero h2 {
+        font-size: 32px;
+      }
+      section {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Diet Planner</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Eat Smart. Live Healthy.</h2>
+    <p>Experience personalized AI-powered nutrition planning, daily reminders, and real-time progress tracking—all in one smart app designed for your wellness journey.</p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <section id="about" class="fade-in">
+    <h3>About Smart Diet Planner</h3>
+    <p>
+      Smart Diet Planner is a web-based AI nutrition assistant that crafts meal plans suited to your health goals.
+      Whether you’re aiming for weight loss, muscle gain, or balanced nutrition, our system analyzes your body metrics, preferences, and activity levels to generate meal recommendations automatically.
+    </p>
+  </section>
+
+  <section id="features" class="fade-in">
+    <h3>Key Features</h3>
+    <div class="features">
+      <div class="feature">
+        <h4>🍎 Personalized Diets</h4>
+        <p>AI-tailored meal suggestions based on your goals, age, and dietary preferences.</p>
+      </div>
+      <div class="feature">
+        <h4>🗣 Voice Guidance</h4>
+        <p>Talk to your virtual diet coach for instant answers and meal tips anytime.</p>
+      </div>
+      <div class="feature">
+        <h4>📊 Calorie Tracker</h4>
+        <p>Monitor your daily calorie intake, macros, and nutritional balance with precision.</p>
+      </div>
+      <div class="feature">
+        <h4>⏰ Smart Reminders</h4>
+        <p>Never skip a meal—set automatic reminders for breakfast, lunch, dinner, and hydration.</p>
+      </div>
+      <div class="feature">
+        <h4>💬 Community Support</h4>
+        <p>Join wellness groups, share meal plans, and track progress together with friends.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h3>Contact Us</h3>
+    <div class="contact">
+      <p>Have feedback or want to collaborate? Reach out to us at <strong>contact@smartdietplanner.ai</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Smart Diet Planner | Designed with 💙 by Nagamani Karnik
+  </footer>
+
+  <script>
+    // Scroll animation
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    fadeEls.forEach(el => appearOnScroll.observe(el));
+  </script>
+</body>
+</html>
